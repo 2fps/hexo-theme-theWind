@@ -1,0 +1,82 @@
+/* @font-face
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: normal
+    src: url(font-icon-path + ".eot?v=#" + font-icon-version)
+    src: url(font-icon-path + ".eot?#iefix&v=#" + font-icon-version) format("embedded-opentype"),
+        url(font-icon-path + ".woff?v=#" + font-icon-version) format("woff"),
+        url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
+        url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg") */
+
+html, body, ul, li, p, div, span
+    padding: 0
+    margin: 0
+
+html, body
+    // font-size: 10px;
+
+ul, li
+    list-style: none
+
+a
+    text-decoration: none;
+    color: #000;
+
+a:link, a:visited
+    color: #000;
+
+a:hover, a:active
+    color: #000;
+
+.main
+    width: 1170px
+    margin: 0 auto
+    padding: 20px 40px
+
+.container
+    margin-top: 20px
+
+.weidget
+    float: right !important
+
+.widget-wrap
+    padding-bottom: 20px
+    // border-bottom: 1px solid #ccc
+    margin-bottom: 30px
+
+.widget-title
+    font-weight: normal
+    border-left: 3px solid #000000
+    padding-left: 15px
+    
+.widget
+    line-height: 24px
+    
+    li
+        font-weight: 300
+        height: 32px
+        line-height: 28px
+    a
+        color: #4c4c4c
+        -webkit-transition: color .3s
+        transition: color .3s
+
+    a:hover
+        color: #00a2ff
+
+.link-blank
+    -webkit-transition: color .3s
+    transition: color .3s
+    &:hover
+        color: #00a2ff
+
+
+@import "_partial/header"
+@import "_partial/article"
+@import "_partial/footer"
+@import "_partial/archive"
+@import "_widget/tag"
+@import "markdown"
+@import "responsive"
+// @import "highlight"
+@import "font-awesome.css"
