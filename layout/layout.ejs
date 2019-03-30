@@ -3,16 +3,17 @@
     <%- partial('_partial/head') %>
     <body>
         <%- partial('_partial/header') %>
-        <div class="container">
+        <div class="container content">
             <div class="row">
-                <section class="col-md-7 col-xs-11">
+                <section class="col-sm-7">
                     <%- body %>
                 </section>
-                <div class="weidget col-md-4 col-xs-0">
+                <div class="weidget col-sm-4 hidden-xs">
                     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
                 </div>
             </div>
         </div>
         <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+        <%- partial('_partial/extra') %>
     </body>
 </html>
