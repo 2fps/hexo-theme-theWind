@@ -34,10 +34,7 @@ archive_type: 'monthly'
 show_count: true
 
 # Miscellaneous
-google_analytics:
+baidu_analytics: '5c36ec13877331796c9bab59781ec6db'
 gauges_analytics:
 favicon: /favicon.png
-twitter:
 google_plus:
-fb_admins:
-fb_app_id:
