@@ -38,3 +38,10 @@ baidu_analytics: '5c36ec13877331796c9bab59781ec6db'
 gauges_analytics:
 favicon: /favicon.png
 google_plus:
+
+post_wordcount:
+    item_text: true
+    wordcount: true         # 单篇 字数统计
+    min2read: true          # 单篇 阅读时长
+    totalcount: false       # 网站 字数统计
+    separated_meta: true
