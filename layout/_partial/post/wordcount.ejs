@@ -1,0 +1,8 @@
+<% if (wordcount) { %>
+    <i class="fa fa-keyboard-o"></i>
+    总计<%= wordcount(post.content) %>字
+<% } %>
+<% if (min2read) { %>
+    <i class="fa fa-clock-o"></i>
+    阅读时长<%= min2read(post.content) %>分钟
+<% } %>

@@ -8,14 +8,14 @@
         <div class="article-type">
             <i class="fa fa-calendar"></i>
             <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-            &nbsp;
+            <%- partial('post/wordcount') %>
         </div>
         <div class="article-entry" itemprop="articleBody">
             <% if (post.excerpt){ %>
                 <%- post.excerpt %>
                 <% if (theme.excerpt_link){ %>
                     <p class="article-more-link">
-                        <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+                        <a href="<%- url_for(post.path) %>#more" class="article-more-a"><%= theme.excerpt_link %></a>
                     </p>
                 <% } %>
             <% } %>

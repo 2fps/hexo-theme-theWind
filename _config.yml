@@ -12,7 +12,7 @@ menu:
 # rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: 阅读更多
 fancybox: true
 
 # Sidebar
@@ -44,4 +44,14 @@ post_wordcount:
     wordcount: true         # 单篇 字数统计
     min2read: true          # 单篇 阅读时长
     totalcount: false       # 网站 字数统计
-    separated_meta: true
+    separated_meta: false
+
+toc:
+    maxdepth: 3
+    class: toc
+    slugify: false
+    decodeEntities: false
+    anchor:
+        position: after
+        symbol: '#'
+        style: header-anchor
